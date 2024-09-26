@@ -1,0 +1,249 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ESPN</title>
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<style>
+body {
+  margin: 0;
+   background: #ececec;
+  font-family: 'arial', sans serif;
+}
+.contenedor {
+  background: #fafafa;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 10px;
+  text-align: justify;
+  height: 100%;
+}
+
+.contenedor img {
+  width: 100%;
+}
+
+@media (max-width:600px)  { 
+  .contenedor {
+    width: 90%;
+  }
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 15px;
+    height: 0;
+     overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #68C420;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.codembed {
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+        .commenter {
+            float: left;
+        }
+        .commenter img {
+            width: 35px;
+            height: 35px;
+        }
+        .comment-text-area {
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+
+        .textinput {
+            float: left;
+            width: 100%;
+            min-height: 30px;
+            outline: none;
+            resize: none;
+            border: 1px solid grey;
+        }
+        .button {
+  background-color: #ffffff; /* Green */
+  border: 3px solid Blue;
+ 
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+    font-weight: bold;
+    width: 174px;
+  }
+</style>
+ <link rel="stylesheet" href="https://latele-envivo.com/styles63.css">
+<link rel="stylesheet" href="https://latele-envivo.com/stylez.css">
+<script>
+
+  window.onload = function(){
+      // your code here
+   
+
+// Define the string
+var string = 'https://www.hlsplayer.org/play?url=https%3A%2F%2Fmdstrm.com%2Flive-stream-playlist%2F57a498c4d7b86d600e5461cb.m3u8%3Fuid%3DJhu8Z4ev60KSZ4mPNbbNoTCSOFmHkxjL%26sid%3Dk3zTLLxK0HfEHhXOHZxSaMF8tUEsFXK1%26pid%3DYrL2IUlLoCUJQzp0n6Du5otGAmGogjGu%26an%3Dtvn-play-app-lg-tv%26at%3Dweb-app%26av%3Dv5.2.455%26ref%3Dhttps%253A%252F%252Flive.tvn.cl%252F%26res%3D1062x622%26without_cookies%3Dfalse%26listenerid%3D%26dnt%3Dtrue%26access_token%3D7ovNyxQEjjiYbAyr44QD7sSNUr4itvXd8ejWSWMlU6PH6T9QkZr0cIzB6KTAKlRJhaMOPdTNsAF%26adInsertionSessionId%3D2836f2ad-4419-4162-bc10-23962cd88f31';
+
+// Encode the String
+var encodedString = btoa(string);
+console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+var source = "https://todos-cc7.pages.dev/repro.html?r="+encodedString;
+
+  var newFrameName = "hello";
+  const iframe = document.getElementById("iframe");
+  $('iframe').attr('src',source ).reload;
+
+
+};
+
+</script>
+</head>
+
+<body>
+ 
+ 
+<center><h2>  </h2></center>
+
+<br>
+    <input class="button" onclick="toggleFullscreen()" type="button" value="Pantalla Completa" />
+<br>
+<br>
+    <div class="video-container">Loading the player...
+<iframe id="iframe" class="embed-responsive-item" allow="encrypted-media" frameborder="0" height="100%" width="100%" allowfullscreen="" scrolling="no" autoplay="autoplay" allowtransparency="" src="" name="iframe"></iframe>
+ </div>
+<br>
+<center><input class="button" onclick="mostrarMensaje1()" type="button" value="La Red" />
+  <input class="button" onclick="mostrarMensaje2()" type="button" value="TV chile" /> 
+  <input class="button" onclick="mostrarMensaje3()" type="button" value="Tv+" /> 
+   <input class="button" onclick="mostrarMensaje4()" type="button" value="UCV" /> 
+    <input class="button" onclick="mostrarMensaje5()" type="button" value="Canal 13" /> 
+  <input class="button" onclick="mostrarMensaje6()" type="button" value="T13" /> 
+    <input class="button" onclick="mostrarMensaje7()" type="button" value="Meganoticias" /> 
+    <input class="button" onclick="mostrarMensaje8()" type="button" value="Variedades" /> 
+     <input class="button" onclick="mostrarMensaje9()" type="button" value="ADN" />
+      <input class="button" onclick="mostrarMensaje10()" type="button" value="CHV" />
+  <input class="button" onclick="mostrarMensaje11()" type="button" value="Mega" />  
+  <input class="button" onclick="mostrarMensaje12()" type="button" value="CHV 2" />
+  </center><br/>
+<script type="text/javascript">
+  function mostrarMensaje1() {
+document.getElementById("iframe").src = "https://anym3u8player.com/tv/video-player.php?url=https://unlimited1-cl-isp.dps.live/lared/lared.smil/playlist.m3u8"
+}
+function mostrarMensaje2() {
+document.getElementById("iframe").src = "https://anym3u8player.com/tv/video-player.php?url=https://mdstrm.com/live-stream-playlist/533adcc949386ce765657d7c.m3u8"
+}
+function mostrarMensaje3() {
+document.getElementById("iframe").src = "https://anym3u8player.com/tv/video-player.php?url=https://mdstrm.com/live-stream-playlist/5c0e8b19e4c87f3f2d3e6a59.m3u8"
+}
+
+function mostrarMensaje4() {
+document.getElementById("iframe").src = "https://anym3u8player.com/tv/video-player.php?url=https://unlimited2-cl-isp.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8"
+}
+
+function mostrarMensaje5() {
+document.getElementById("iframe").src = "https://rudo.video/live/C13?c3=13CL&autostart=1&volume=0&tag=eyJwcmUiOiJodHRwczpcL1wvcHViYWRzLmcuZG91YmxlY2xpY2submV0XC9nYW1wYWRcL2Fkcz9pdT1cLzExMjM3MjIwN1wvMTMuY2xcL3BvcnRhZGFcL3ByZWhvbWUuYW9ueWkmZGVzY3JpcHRpb25fdXJsPWh0dHAlM0ElMkYlMkZ3d3cuMTMuY2wlMkZlbi12aXZvJmVudj12cCZpbXBsPXMmY29ycmVsYXRvcj0mdGZjZD0wJm5wYT0wJmdkZnBfcmVxPTEmb3V0cHV0PXZhc3Qmc3o9NjU2eDM2OCZjaXVfc3pzPTcyOHg5MCw5NzB4OTAsOTcweDI1MCwxOTAweDgyNSwxOTIweDc2OCw0MDB4NjAmdW52aWV3ZWRfcG9zaXRpb25fc3RhcnQ9MSZwbW5kPTAmcG14ZD0xMjAwMDAmcG1hZD0yJnBvZD0xIiwicG9zdCI6MCwibWlkIjp7InRhZyI6MCwidGltZSI6W119LCJvdmVyIjp7InRhZyI6Imh0dHBzOlwvXC9wdWJhZHMuZy5kb3VibGVjbGljay5uZXRcL2dhbXBhZFwvYWRzP2l1PVwvMTEyMzcyMjA3XC9lbnZpdm8uY2xcL2Vudml2b1wvb3ZlcmxheXl5eSZkZXNjcmlwdGlvbl91cmw9aHR0cCUzQSUyRiUyRnd3dy4xMy5jbCUyRmVuLXZpdm8mZW52PXZwJmltcGw9cyZjb3JyZWxhdG9yPSZ0ZmNkPTAmbnBhPTAmZ2RmcF9yZXE9MSZvdXRwdXQ9dmFzdCZ2YWRfdHlwZT1ub25saW5lYXImc3o9NDAweDYwJm1pIiwidGltZSI6Wzg2NDAwXX19"
+}
+
+
+function mostrarMensaje6() {
+document.getElementById("iframe").src = "https://anym3u8player.com/tv/video-player.php?url=https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd/t13/t13.smil/playlist.m3u8"
+}
+
+
+function mostrarMensaje7() {
+document.getElementById("iframe").src = "https://anym3u8player.com/tv/video-player.php?url=https://unlimited1-cl-isp.dps.live/mega/mega.smil/playlist.m3u8"
+}
+
+
+function mostrarMensaje8() {
+document.getElementById("iframe").src = "https://anym3u8player.com/tv/video-player.php?url=https://stmv5.voxtvhd.com.br/tvquintaregion/tvquintaregion/chunklist_w1400600032.m3u8?WebM3UCL"
+}
+
+function mostrarMensaje9() {
+document.getElementById("iframe").src = "https://anym3u8player.com/tv/video-player.php?url=https://jireh-1-hls-video-cl-entel.dps.live/hls-video/931b584451fa6dd1313ee66efbfd5802e3f3bcea/adntv/adntv.smil/adntv/livestream2/chunks.m3u8?dpssid=b13210782772336503c47649226&ndvc=0&sid=ba5t1l1xb419024217286540e901a2c47"
+}
+
+function mostrarMensaje10() {
+document.getElementById("iframe").src = "https://scoobyplay.w3spaces.com/CHV.HTML"
+}
+function mostrarMensaje11() {
+document.getElementById("iframe").src = "https://www.viendotele.cl/assets-tele/player-general.php?stream=mega-cl"
+}
+function mostrarMensaje12() {
+document.getElementById("iframe").src = "https://rudo.video/live/chvn"
+}
+</script>
+<center>-</center>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<footer>
+
+
+
+</footer>
+</script>
+<script>function toggleFullscreen() {
+  let elem = document.querySelector("iframe");
+
+  if (!document.fullscreenElement) {
+    elem.requestFullscreen().catch((err) => {
+      alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+    });
+  } else {
+    document.exitFullscreen();
+  }
+}</script>
